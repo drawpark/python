@@ -1,0 +1,17 @@
+git —version 설치된 git 버전 확인
+계정 설정 (완료)
+git config —global user.name "userid"
+git config —global user.email "userid@MacBook-Air.local" 
+git config —list 설정 내용 확인
+
+Git 주요명령어
+git status 현재 파일 및 폴더 상태 확인
+ls 현재 위치
+cd 파일 이동
+
+Git 파일 올리는 법 *반드시 cd로 파일 이동한 후 ls로 현재 위치 파악한 후 올리기!!
+git init 
+add . 
+git commit -m ‘파일설정’
+git remote add origin 래포 주소
+git push -u origin master

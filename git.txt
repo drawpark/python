@@ -1,0 +1,72 @@
+
+C:\Users\User>git --version
+git version 2.36.0.windows.1
+
+C:\Users\User>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.usebuiltinfsmonitor=true
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.editor="C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=drawpark
+user.email=keun2317@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+C:\Users\User>ls
+'ls'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\Users\User>cd C:\git
+
+C:\git>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\git>git init
+Initialized empty Git repository in C:/git/.git/_
+C:\git>git ad .
+git: 'ad' is not a git command. See 'git --help'.
+
+The most similar commands are
+        add
+        am
+
+C:\git>git add .
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+C:\git>git commit -m "git.text"
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[master (root-commit) fe55219] git.text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git.txt
+
+C:\git>git remote add origin https://github.com/drawpark/Park-Keunyoung.git
+
+C:\git>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 206 bytes | 206.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/drawpark/Park-Keunyoung.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\git>
